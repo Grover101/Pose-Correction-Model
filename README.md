@@ -2,7 +2,20 @@
 
 <!-- [![wakatime](https://wakatime.com/badge/github/Grover101/Pose-Correction.svg)](https://wakatime.com/badge/github/Grover101/Pose-Correction) -->
 
+# Herramientas y Tecnologias
+
 # Procesos del Proyecto
+
+- [x] Obtener Dataset
+- [ ] Creacion de Dataset
+- [ ] Data Augmentation
+- [ ] Normalizacion
+- [ ] Creacion de Modelo
+- [ ] Resultados de Entrenamiento
+- [ ] Uso de Modelo para Javascript
+- [ ] Creacion de Servicio Web
+- [ ] Uso de Modelo en Web
+- [ ] Resultado Final
 
 ## 1. Obtener Dataset
 
@@ -22,7 +35,7 @@
 
 ## 3. Data Augmentation
 
-## 4. Normalizacion de Dataset
+## 4. Normalizacion
 
 ## Puntos a tomar en cuenta
 
