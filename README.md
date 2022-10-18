@@ -7,7 +7,7 @@
 # Procesos del Proyecto
 
 - [x] Obtener Dataset
-- [ ] Creacion de Dataset
+- [ ] Creacion y Procesamiento de Datos
 - [ ] Data Augmentation
 - [ ] Normalizacion
 - [ ] Creacion de Modelo
@@ -19,25 +19,50 @@
 
 ## 1. Obtener Dataset
 
+[![Dataset Pose de Yoga](https://img.shields.io/badge/Dataset-download-blue)](https://drive.google.com/drive/folders/1A5BjyqNvs_q7EfUhTdcNEiesZ8IVxMF2?usp=sharing)
+
 ```
-   Dataset/
-   |__ train/
-       |__ warrior/
-           |______ 00000128.jpg
-           |______ ...
-   |__ test/
-       |__ warrior/
-           |______ 00000181.jpg
-           |______ ...
+   img/
+    |__ no_pose/
+    |    |__ (1).jpg
+    |    |__ ...
+    |__ shoudler_stand/
+    |    |__ (1).jpg
+    |    |__ ...
+    |__ traingle/
+    |    |__ (1).jpg
+    |    |__ ...
+    |__ tree/
+    |    |__ (1).jpg
+    |    |__ ...
+    |__ warrior/
+         |__ (1).jpg
+         |__ ...
 ```
 
 ## 2. Creacion de Dataset
+
+```
+   dataset/
+   |__ train/
+       |__ warrior/
+       |   |______ (1).jpg
+       |   |______ ...
+       |__ ...
+   |__ test/
+       |__ warrior/
+       |   |______ (25).jpg
+       |   |______ ...
+       |__ ...
+```
 
 ## 3. Data Augmentation
 
 ## 4. Normalizacion
 
 ## Puntos a tomar en cuenta
+
+![alt](https://learnopencv.com/wp-content/uploads/2021/05/fix-overlay-issue.jpg)
 
 ![MoveNet](https://storage.googleapis.com/movenet/coco-keypoints-500.png)
 
