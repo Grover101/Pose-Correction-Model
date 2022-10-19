@@ -42,6 +42,12 @@
 
 ## 2. Creacion de Dataset
 
+Para crear el dataset a partir de las imagenes ejecutar:
+
+```
+python dataset.py
+```
+
 ```
    dataset/
    |__ train/
@@ -60,7 +66,11 @@
 
 ## 3. Data Augmentation
 
-## 4. Normalizacion
+## 4. Normalizacion y Procesamiento de Datos
+
+## 5. Creacion de Modelo
+
+![MLP](https://www.dotnetlovers.com/images/NeuralNetwork314202013722AM.png)
 
 ## Puntos a tomar en cuenta
 
