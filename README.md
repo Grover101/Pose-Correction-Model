@@ -7,9 +7,9 @@
 # Procesos del Proyecto
 
 - [x] Obtener Dataset
-- [ ] Creacion y Procesamiento de Datos
+- [x] Creacion de Dataset
 - [ ] Data Augmentation
-- [ ] Normalizacion
+- [ ] Normalizacion y Procesamiento de Datos
 - [ ] Creacion de Modelo
 - [ ] Resultados de Entrenamiento
 - [ ] Uso de Modelo para Javascript
@@ -55,6 +55,8 @@
        |   |______ ...
        |__ ...
 ```
+
+<!-- [text](https://github.com/amalaj7/Pose-Estimation-TFLite) -->
 
 ## 3. Data Augmentation
 
