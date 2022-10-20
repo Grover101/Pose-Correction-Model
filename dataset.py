@@ -6,8 +6,8 @@ import shutil
 def creacion_dataset():
     try:
         route_root = os.getcwd()
-        route_dataset = route_root+'/dataset'
-        images_in_folder_root = os.path.join(route_root+'/img')
+        route_dataset = os.path.join(route_root, 'dataset')
+        images_in_folder_root = os.path.join(route_root, 'img')
         if ('dataset' not in os.listdir()):
             os.makedirs('dataset')
 
