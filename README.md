@@ -8,7 +8,7 @@
 
 - [x] Obtener Dataset
 - [x] Creacion de Dataset
-- [ ] Data Augmentation
+- [x] Data Augmentation
 - [ ] Normalizacion y Procesamiento de Datos
 - [ ] Creacion de Modelo
 - [ ] Resultados de Entrenamiento
@@ -65,6 +65,24 @@ python dataset.py
 <!-- [text](https://github.com/amalaj7/Pose-Estimation-TFLite) -->
 
 ## 3. Data Augmentation
+
+Para crear el dataset augmentation a partir de las imagenes ejecutar:
+
+```
+python augmentation.py
+```
+
+Para volver a tener el dataset principal con el dataset_augmentation ejecutar:
+
+```
+python dataset.py 'augmentation'
+```
+
+### Resultados de 5 imagenes generadas a partir de una
+
+| Imagen Original                                     | 1                                                         | 2                                                         | 3                                                         | 4                                                         | 5                                                         |
+| --------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
+| ![tree original](<resources/augmentation/(76).png>) | ![tree modificada 1](resources/augmentation/1471-aug.png) | ![tree modificada 2](resources/augmentation/1472-aug.png) | ![tree modificada 3](resources/augmentation/1473-aug.png) | ![tree modificada 4](resources/augmentation/1474-aug.png) | ![tree modificada 5](resources/augmentation/1475-aug.png) |
 
 ## 4. Normalizacion y Procesamiento de Datos
 
