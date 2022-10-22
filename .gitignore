@@ -143,3 +143,7 @@ cython_debug/
 # resource
 dataset
 dataset_augmentation
+
+# model
+*.tflite
+*.best.hdf5
