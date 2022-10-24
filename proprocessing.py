@@ -1,3 +1,7 @@
+""" Base para la implementacion:
+- https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/movenet.ipynb
+"""
+
 import tensorflow as tf
 import numpy as np
 import pandas as pd
@@ -16,17 +20,8 @@ if ('movenet_thunder.tflite' not in os.listdir()):
 movenet = Movenet('movenet_thunder')
 
 
+# Deteccion de una imagen y retorna una tupla
 def detect(input_tensor, inference_count=3):
-    """
-    It runs the model on the input tensor, and then runs it again on the same input tensor a few more
-    times
-
-    @param input_tensor The input image to the model.
-    @param inference_count The number of times to run inference on the same image.
-
-    @return The detection is a list of tuples. Each tuple contains the class id, the confidence, and the
-    bounding box.
-    """
     movenet.detect(input_tensor.numpy(), reset_crop_region=True)
     for _ in range(inference_count - 1):
         detection = movenet.detect(input_tensor.numpy(),
