@@ -103,7 +103,7 @@ class Preprocessor(object):
 
                     # Obtenga puntos de referencia y escalelos al mismo tamaño que la imagen de entrada
                     pose_landmarks = np.array(
-                        [[keypoint.coordinate.x, keypoint.coordinate.y]
+                        [[keypoint.coordinate.x, keypoint.coordinate.y, keypoint.score]
                          for keypoint in person.keypoints],
                         dtype=np.float32)
 
@@ -139,7 +139,7 @@ class Preprocessor(object):
             else:
                 total_df = pd.concat([total_df, per_class_df], axis=0)
 
-        list_name = [[bodypart.name + '_x', bodypart.name + '_y']
+        list_name = [[bodypart.name + '_x', bodypart.name + '_y', bodypart.name + '_score']
                      for bodypart in BodyPart]
         # Encabezado de cada columna
         header_name = []
