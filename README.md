@@ -1,6 +1,6 @@
 # Pose Correction
 
-<!-- [![wakatime](https://wakatime.com/badge/github/Grover101/Pose-Correction.svg)](https://wakatime.com/badge/github/Grover101/Pose-Correction) -->
+<!-- [![wakatime](https://wakatime.com/badge/github/Grover101/Pose-Correction.svg?style=flat-square)](https://wakatime.com/badge/github/Grover101/Pose-Correction) -->
 
 # Herramientas y Tecnologias
 
@@ -9,7 +9,7 @@
 - [x] Obtener Dataset
 - [x] Creacion de Dataset
 - [x] Data Augmentation
-- [ ] Normalizacion y Procesamiento de Datos
+- [x] Normalizacion y Procesamiento de Datos
 - [ ] Creacion de Modelo
 - [ ] Resultados de Entrenamiento
 - [ ] Uso de Modelo para Javascript
@@ -19,7 +19,7 @@
 
 ## 1. Obtener Dataset
 
-[![Dataset Pose de Yoga](https://img.shields.io/badge/Dataset-download-blue)](https://drive.google.com/drive/folders/1A5BjyqNvs_q7EfUhTdcNEiesZ8IVxMF2?usp=sharing)
+[![Dataset Pose de Yoga](https://img.shields.io/badge/Download-Dataset-blue?style=flat-square&logo=docusign)](https://drive.google.com/drive/folders/1A5BjyqNvs_q7EfUhTdcNEiesZ8IVxMF2?usp=sharing)
 
 ```
    img/
@@ -86,16 +86,20 @@ python dataset.py 'augmentation'
 
 ## 4. Normalizacion y Procesamiento de Datos
 
+Para la normalizacion y procesamiento de datos se fue leyendo cada imagen de cada clase, se usa `movenet` para la lectura de puntos del cuerpo:
+
+### Documentacion base
+
+[![Prueba del modelo](https://img.shields.io/badge/MoveNet-Docuemtacion-green?style=flat-square&logo=tensorflow)](https://tfhub.dev/google/movenet/singlepose/lightning/4)
+
+### Puntos a tomar en cuenta
+
+[![Prueba del modelo](https://img.shields.io/badge/MoveNet-Prueba%20Demo-orange?style=flat-square&logo=tensorflow)](https://storage.googleapis.com/tfjs-models/demos/pose-detection/index.html?model=movenet)
+
+![Punto de MoveNet](https://learnopencv.com/wp-content/uploads/2021/05/fix-overlay-issue.jpg)
+
+El dataset a formarse sera un `*.csv` tanto para **train** y **test** por cada imagen se capturara los puntos con las coordenas `(x, y)` de acuerdo a la imagen de referencia correspondiente, se ira guardando por cada clase de postura de yoga. tambien
+
 ## 5. Creacion de Modelo
 
 ![MLP](https://www.dotnetlovers.com/images/NeuralNetwork314202013722AM.png)
-
-## Puntos a tomar en cuenta
-
-![alt](https://learnopencv.com/wp-content/uploads/2021/05/fix-overlay-issue.jpg)
-
-![MoveNet](https://storage.googleapis.com/movenet/coco-keypoints-500.png)
-
-0: nose \ 1: left_eye \ 2: right_eye \ 3: left_ear \ 4: right_ear \ 5: left_shoulder \ 6: right_shoulder \ 7: left_elbow \ 8: right_elbow \ 9: left_wrist \ 10: right_wrist \ 11: left_hip \ 12: right_hip \ 13: left_knee \ 14: right_knee \ 15: left_ankle \ 16: right_ankle
-
-[Prueba del modelo](https://storage.googleapis.com/tfjs-models/demos/pose-detection/index.html?model=movenet)
