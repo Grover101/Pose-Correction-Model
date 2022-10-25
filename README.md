@@ -11,7 +11,7 @@
 - [x] Data Augmentation
 - [x] Normalizacion y Procesamiento de Datos
 - [x] Creacion de Modelo
-- [ ] Resultados de Entrenamiento
+- [x] Resultados de Entrenamiento
 - [ ] Uso de Modelo para Javascript
 - [ ] Creacion de Servicio Web
 - [ ] Uso de Modelo en Web
@@ -115,3 +115,30 @@ Para ello se uso la siguiente configuracion:
 - Funcion de perdida CrossEntropyLoss
 - Optimizador Adam
 - Learning rate de 0.001
+
+## 6. Resultados y conclusion de Entrenamiento
+
+[![Cuadernillo de Entrenamiento](https://img.shields.io/badge/Notebook-Entrenamiento%20Modelo-blue?style=flat-square&logo=googlecolab)](notebooks/Creacion_de_modelo.ipynb)
+
+### Entrenamiento
+
+![Entranamiento de Modelo](resources/modelo/Entrenamiento.PNG)
+
+### Regularizacion
+
+| Regularizador             | loss    | acc     | val_loss | val_acc |
+| ------------------------- | ------- | ------- | -------- | ------- |
+| Regularizacion L2 (Lasso) | 1.40019 | 0.41447 | 1.43534  | 0.31765 |
+| Early Stopping            | 1.40179 | 0.41433 | 1.43928  | 0.31765 |
+| Dropout                   | 1.39696 | 0.41433 | 1.44277  | 0.31765 |
+
+### Optimizadores
+
+| Optimizador                                      | loss    | acc     | val_loss | val_acc |
+| ------------------------------------------------ | ------- | ------- | -------- | ------- |
+| SGD (‘Stochastic Gradient Descent‘) + Dropout    | 0.03281 | 0.98947 | 0.09477  | 0.9641  |
+| SGD Momentum + Dropout                           | 1.39540 | 0.41447 | 1.43488  | 0.31765 |
+| RMSprop (Root Mean Square Propagation) + Dropout | 0.06392 | 0.98480 | 0.21004  | 0.97647 |
+| Adam (Adaptive moment estimation) + Dropout      | 0.02162 | 0.99298 | 0.12012  | 0.99020 |
+
+![Resultados de Optimizadores](resources/modelo/Optimizadores.png)
