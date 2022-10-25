@@ -12,7 +12,7 @@
 - [x] Normalizacion y Procesamiento de Datos
 - [x] Creacion de Modelo
 - [x] Resultados de Entrenamiento
-- [ ] Uso de Modelo para Javascript
+- [x] Uso de Modelo para Javascript
 - [ ] Creacion de Servicio Web
 - [ ] Uso de Modelo en Web
 - [ ] Resultado Final
@@ -98,7 +98,7 @@ Para la normalizacion y procesamiento de datos se fue leyendo cada imagen de cad
 
 ![Punto de MoveNet](https://learnopencv.com/wp-content/uploads/2021/05/fix-overlay-issue.jpg)
 
-El dataset a formarse sera un `*.csv` tanto para **train** y **test** por cada imagen se capturara los puntos con las coordenas `(x, y)` de acuerdo a la imagen de referencia correspondiente, se ira guardando por cada clase de postura de yoga. tambien
+El dataset a formarse sera un `*.csv` tanto para **train** y **test** por cada imagen se capturara los puntos con las coordenas `(x, y)` de acuerdo a la imagen de referencia correspondiente, se ira guardando por cada clase de postura de yoga. Haciendo un total de 34 columnas y una mas para la clase de postura de yoga.
 
 ## 5. Creacion de Modelo
 
@@ -142,3 +142,5 @@ Para ello se uso la siguiente configuracion:
 | Adam (Adaptive moment estimation) + Dropout      | 0.02162 | 0.99298 | 0.12012  | 0.99020 |
 
 ![Resultados de Optimizadores](resources/modelo/Optimizadores.png)
+
+## 7. Uso de Modelo para Javascript
