@@ -10,7 +10,7 @@
 - [x] Creacion de Dataset
 - [x] Data Augmentation
 - [x] Normalizacion y Procesamiento de Datos
-- [ ] Creacion de Modelo
+- [x] Creacion de Modelo
 - [ ] Resultados de Entrenamiento
 - [ ] Uso de Modelo para Javascript
 - [ ] Creacion de Servicio Web
@@ -102,4 +102,16 @@ El dataset a formarse sera un `*.csv` tanto para **train** y **test** por cada i
 
 ## 5. Creacion de Modelo
 
+Se usara un modelo Perceptrón Multicapa (Multi Layer Perceptron) `MLP`
+
 ![MLP](https://www.dotnetlovers.com/images/NeuralNetwork314202013722AM.png)
+
+Para ello se uso la siguiente configuracion:
+
+- Batch size 10
+- Epoch 100
+- Dropout con una probabilidad de eliminacion de 0.5
+- Funcion de activacion Relu y Softmax
+- Funcion de perdida CrossEntropyLoss
+- Optimizador Adam
+- Learning rate de 0.001
