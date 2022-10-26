@@ -100,6 +100,8 @@ Para la normalizacion y procesamiento de datos se fue leyendo cada imagen de cad
 
 El dataset a formarse sera un `*.csv` tanto para **train** y **test** por cada imagen se capturara los puntos con las coordenas `(x, y)` de acuerdo a la imagen de referencia correspondiente, se ira guardando por cada clase de postura de yoga. Haciendo un total de 34 columnas y una mas para la clase de postura de yoga.
 
+Dataset generados para el modelo: **[train.csv](dataset_csv/test_data.csv)** y **[test.csv](dataset_csv/test_data.csv)**
+
 ## 5. Creacion de Modelo
 
 Se usara un modelo Perceptrón Multicapa (Multi Layer Perceptron) `MLP`
