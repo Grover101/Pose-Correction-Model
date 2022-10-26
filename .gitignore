@@ -144,7 +144,7 @@ cython_debug/
 dataset
 dataset_augmentation
 temp
-*.csv
+/*.csv
 
 # model
 *.tflite
