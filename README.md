@@ -90,7 +90,7 @@ Para la normalizacion y procesamiento de datos se fue leyendo cada imagen de cad
 
 ### Documentacion base
 
-[![Prueba del modelo](https://img.shields.io/badge/MoveNet-Docuemtacion-green?style=flat-square&logo=tensorflow)](https://tfhub.dev/google/movenet/singlepose/lightning/4)
+[![MoveNet Documentacion](https://img.shields.io/badge/MoveNet-Docuemtacion-green?style=flat-square&logo=tensorflow)](https://tfhub.dev/google/movenet/singlepose/lightning/4)
 
 ### Puntos a tomar en cuenta
 
